@@ -21,7 +21,7 @@ export default [
   prettierConfig,
   ...compat.extends('eslint-config-airbnb'),
   {
-    ignores: ['node_modules/**', 'dist/**', 'build/**', '.eslint/**', 'public/**'],
+    ignores: ['node_modules/**', 'dist/**', 'build/**', '.eslint/**', 'public/**', 'cypress/**'],
   },
   {
     files: ['**/*.{js,jsx,mjs}'],
