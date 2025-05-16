@@ -19,6 +19,7 @@ export default defineConfig({
     },
   },
   build: {
+    outDir: 'dist',
     sourcemap: true,
     rollupOptions: {
       output: {
@@ -26,7 +27,11 @@ export default defineConfig({
           react: ['react', 'react-dom'],
           redux: ['redux', 'react-redux', 'redux-thunk'],
         },
+        format: 'es',
       },
     },
+  },
+  resolve: {
+    // Add any path aliases here if needed
   },
 });
